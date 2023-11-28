@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="javascript" href="script.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+ <body>
+     /*button*/
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
+        <div style="height: 150px;">
+            <h1 class="title", style="margin-top: -1%">Avro Arrow</h1>
+            <h3 class="heading", style="margin-top: -4%;font-size: 40px;">Canadas Fastest Plane</h3>
+        </div>
+        <div class="parallax"></div>
+
+        <div class="banner1", style="color: white; margin-top: -5%">
+            <h2 class="heading">
+            1945 - 1947</h2>
+            <p class="container">A.V. Roe, a British aircraft manufacturer, arrived in Canada in 45 to gain opportunity from the remains of Canada’s aviation force from WW2 that were left unemployed. This became the company A.V. Roe(Arvo) Canada<br>
+                The tensions between the West and the Soviet Union escalated into what is known as the Cold war. This led to Canada further committing themselves towards the Western cause by increasing and improving their military.
+            </p>
+            <a href="image_gallery.html" class="circle-button">Click</a>
+        </div>
+
+        <div class="parallax-2"></div>
+        <div class="banner2", style="color: white; margin-top: -5%">
+            <h2 class="heading">1950 - 1954</h2>
+            <p class="container">Intelligence from NATO suggested that North America was at risk of attack from Soviet bombers from the Canadian Arctic and predicted that the attacks could occur as soon as 1954.<br>
+                Around 1953-54 Avro was commissioned by the Royal Canadian Air Force to design a “all-weather nuclear interceptor” capable of exceeding the speeds and heights of any aircraft at the time. It was believed to be an impossible task.
+            </p>
+            <a href="image_gallery.html" class="circle-button">Click</a>
+        </div>
+
+        <div class="parallax-3"></div>
+        <div class="banner3", style="color: white; margin-top: -5%">
+            <h2 class="heading">
+            1955 - 1956</h2>
+            <p class="container">The Arrow went through rigorous testing, due to the fact that computer simulation was not available, wind tunnels were essentially relied on with scaled down models.<br>
+                The plane itself weighs around 20000 kg, with a length of 15.2 m along the wingspan, granted to be “the world’s first computerized flight control and weapons system. Faster than any jet in its class.” (Chong) In the end, the Arrow can fly close to 2x the speed of sound with an altitude of 530000 ft.<br>
+            </p>
+            <!-- HTML for the button -->
+            <a href="image_gallery.html" class="circle-button">Click</a>
+                
+        </div>
+        <div class="parallax-4"></div>
+        <div class="banner4", style="color: white; margin-top: -5%">
+            <h2 class="heading">
+            1957 - 1958</h2>
+            <p class="container">On the 4th October of 1957, the first Arrow was revealed to the public, among 12000 spectators. At the same time, the Soviet Union launched the world's first human made satellite. Now fear has shifted to paranoia wondering when an attack could happen from space leading to question the Arrow's purpose.<br>
+            The newly elected Prime Minister Diefenbaker at the time had problems with the president of Avro and were known to not like each other.
+            </p>
+            <a href="image_gallery.html" class="circle-button">Click</a>
+        </div>
+        <div class="parallax-5"></div>
+        <div class="banner5", style="color: white; margin-top: -5%">
+            <h2 class="heading">
+            1959</h2>
+            <p class="container">In February of 1959, The Arrow project was canceled by Diefenbaker, over 14000 people lost their jobs and anything that had to do with the aircraft was dismantled and destroyed.
+            </p>
+            <a href="image_gallery.html" class="circle-button">Click</a>
+        </div>
+        <div style="background-color:gray; height: 250px; color: white; margin-top: -5%">
+            <p class="container2">
+                Images sourced from/Bibliography:<br>
+                Chong, Barry. "Avro Arrow". The Canadian Encyclopedia, 10 November 2022, Historica Canada. <br>
+                 www.thecanadianencyclopedia.ca/en/article/avro-arrow. Accessed 11 November 2023<br>
+                 “Photos.” AVRO MUSEUM, Avro Museum, www.avromuseum.com/photos4.html. Accessed 10 Nov. 2023.<br>
+                 https://www.avromuseum.com/uploads/1/8/3/9/18390559/avro_timeline_sorted_by_section_3.pdf
+            </p>
+            </div>
+    </body>
+     <!-- 
+        vw is for background of main image
+        making a button:
+            using div w/class .image, absoloute position adding background, wi/hi
+            border-radius
+
+     -->
+</html>
